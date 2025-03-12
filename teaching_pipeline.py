@@ -18,7 +18,7 @@ class Pipeline:
 
     def __init__(self):
         self.name = "教学内容生成器"
-        self.api_url = "http://localhost:7234/generate_teaching_content"
+        self.api_url = "http://host.docker.internal:7234/generate_teaching_content"
         self.valves = self.Valves()
         
     async def on_startup(self):
